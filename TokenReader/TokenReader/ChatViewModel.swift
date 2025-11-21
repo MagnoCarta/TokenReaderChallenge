@@ -20,6 +20,7 @@ final class ChatViewModel {
 
         streamingTask = Task { [weak self] in
             guard let self = self else { return }
+            self.liveMetrics.isStreaming = true
             // Append placeholder assistant item and get its index
             let assistantIndex = self.items.count
             self.items.append(ChatItem(role: .assistant, text: ""))

@@ -23,7 +23,7 @@ actor ChatService {
         let promptText = #"""
           You are a helpful assistant. Respond clearly and succinctly.
 
-          User: \(prompt)
+          User: \#(prompt)
           """#
         let prompt = Prompt(promptText)
 
